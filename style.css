@@ -1,0 +1,106 @@
+/* CSS RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+ul[class], ol[class] {
+	padding: 0;
+}
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+	margin: 0;
+}
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+ul[class], ol[class] {
+	list-style: none;
+}
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+article>*+* {
+	margin-top: 1em;
+}
+input, button, textarea, select {
+	font: inherit;
+}
+
+  
+  body {
+    background: #EFEFBB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    font-family: fantasy
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .container {
+    text-align: center;
+    padding-top: 1%;
+  }
+  
+  .container h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+  
+  /* menswear styling */
+  .menswear {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+  
+  .flex img {
+    border-radius: 40px;
+    width:40%;
+    padding-bottom: 20px;
+  }
+
+
+  .flex h2 {
+    font-size: 28px;
+    margin: 25px 0 0px 0;
+  }
+  
+  .flex p {
+    padding: 0 25%;
+  }
+  .none {
+      display: none;
+  }
+
+    /* display 3 columns */
+  @media (min-width: 960px) {
+    .flex {
+        flex-basis: 33.333333%;
+    }
+  }
+  
+
+  .transition {
+    transition: 0.7s all ease;
+  }
+
+  .scaled {
+    transform: scale(1.35);
+  }   
