@@ -23,15 +23,17 @@ $(document).ready(function(){
                        `;
     
                        menswear.appendChild(product);
+
+                       const currentImage = product.querySelector('img');
     
-                       $(product).on('mouseover', function(e) {
+                       $(currentImage).on('mouseover', function(e) {
                            console.log($(this));
-                        $(this).find('img').attr("src",`${element.images.model}`).addClass('scaled');
+                        $(this).attr("src",`${element.images.model}`).addClass('scaled');
                           });
                           
-                          $(product).on('mouseleave', function(e) {
+                          $(currentImage).on('mouseleave', function(e) {
                             console.log($(this));
-                         $(this).find('img').attr("src",`${element.images.cutOut}`).removeClass('scaled');
+                         $(this).attr("src",`${element.images.cutOut}`).removeClass('scaled');
                            });
 
                      });
