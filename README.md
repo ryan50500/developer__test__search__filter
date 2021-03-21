@@ -1,1 +1,1 @@
-project can be found at https://ryan50500.github.io/farfetch_api_loop_JSON/index.html
+project can be found at https://ryan50500.github.io/search_through_jSON_api/index.html
