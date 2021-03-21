@@ -81,14 +81,32 @@ input, button, textarea, select {
     font-size: 28px;
     margin: 25px 0 0px 0;
   }
-  
   .flex p {
     padding: 0 25%;
-  }
+    font-size: 20px;
+}
   .none {
       display: none;
   }
 
+  .transition {
+    transition: 0.7s all ease;
+  }
+
+  .scaled {
+    transform: scale(1.35);
+  }   
+
+  input#filter {
+    width: 250px;
+    height: 40px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+input#filter:focus {
+  outline: #4d90fe auto 2px !important;
+}
     /* display 3 columns */
   @media (min-width: 960px) {
     .flex {
@@ -103,10 +121,3 @@ input, button, textarea, select {
   }
 }
 
-  .transition {
-    transition: 0.7s all ease;
-  }
-
-  .scaled {
-    transform: scale(1.35);
-  }   
