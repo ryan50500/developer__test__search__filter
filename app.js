@@ -69,7 +69,8 @@ $(document).ready(function() {
                     <h2>${element.brand.name}</h2>
                     <img class="transition" src="${element.images.cutOut}"
                     alt="${element.brand.name}">
-                    <p>${element.shortDescription}</p>
+					<p>${element.shortDescription}</p>
+					<p>${element.priceInfo.formattedFinalPrice}</p>
                 </div>
                        `;
 
